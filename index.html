@@ -8,8 +8,8 @@
     model-viewer {
 margin: 150px auto 75px;
 display: block;
-width: 1080px;
-height: 1920px;
+width: 1000px;
+height: 1800px;
     }
   </style>
   
@@ -27,7 +27,7 @@ height: 1920px;
           </button>
 
           <div id="ar-prompt">
-              <img src="../../assets/hand.png">
+              <img src="button.png">
           </div>
 
           <button id="ar-failure">
@@ -48,7 +48,7 @@ height: 1920px;
           const modelViewer = document.querySelector("model-viewer");
 
           window.switchSrc = (element, name) => {
-              const base = "../../assets/ShopifyModels/" + name;
+              const base = "Models/" + name;
               modelViewer.src = base + '.glb';
               modelViewer.poster = base + '.webp';
               const slides = document.querySelectorAll(".slide");
