@@ -20,10 +20,17 @@ height: 1000px;
                     poster="logoml.jpg"
                     tone-mapping="neutral"
                     shadow-intensity="1"
-                    
                     ar camera-controls
                     touch-action="pan-y"
                     alt="A 3D model carousel">
+
+          <button slot="ar-button"
+                  style="background-color: white;
+                  border-radius: 4px;
+                  border: none;
+                  position: absolute; top: 16px; right: 16px; ">
+                  Activate AR
+          </button>
 
           <button slot="ar-button" id="ar-button">
               View in your space
